@@ -1,0 +1,284 @@
+@charset "UTF-8";  /* 文字コードの指定（文字化け防止） */
+
+html {
+  font-size: 100%;  /* フォントサイズをブラウザのデフォルトサイズ16pxに設定 */
+}
+
+body {
+    /* 本文の文字色と文字サイズ */
+    color: #24292E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+a {  /* リンクの下線を消す */
+  text-decoration: none;
+}
+
+img {  /* 画像の幅を親要素の100%に制限（レスポンシブ対応） */
+  max-width: 100%;
+}
+
+li {  /* リストのマーカー（・や番号）を削除 */
+  list-style: none;
+}
+
+.wrapper{
+    max-width: 960px;
+    font-size: 0.9rem;
+    margin:0 auto 130px auto;
+    padding:0 4%;
+}
+
+.wrapper2{
+    max-width: 900px;
+    font-size: 0.9rem;
+    margin:0 auto 130px auto;
+    padding:0 4%;
+}
+
+.sec-title{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+#header{
+    /* background-color: aqua; */
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    margin:0 auto;
+    padding:0 4%;
+}
+
+#header ul{
+    display: flex;
+    padding: 10px 0;/*  ←レスポンシブのために必要？ */
+}
+
+#header li{
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+#header li a {
+    color: #24292e;
+}
+
+#header li a:hover{
+    opacity: 0.7;
+}
+
+.mainvisual img{
+    width:100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 80px;
+
+}
+
+#About{
+    margin-top: 50px;
+}
+
+#About p{
+    text-align: justify;
+}
+
+.about{
+    margin-top: 50px;
+    display: flex;
+    align-items:flex-start
+}
+
+.about-image{
+    width: 100%;
+    width: 40%;
+}
+
+.about-text{
+    margin-left: 50px;
+    max-width: 60%;
+}
+
+.title2{
+    font-size: 1.3rem;
+    margin-bottom: px;
+    font-weight: bold;
+}
+
+.title3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skill{
+    font-size: 1.0rem;
+}
+
+#Works ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   /*  margin-bottom: 50px;いるのかわからない */
+}
+
+#Works li{
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+#News dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#News dt{
+    width: 20%;
+    border-top:1px solid rgb(179, 179, 179);
+    padding: 15px;
+}
+
+#News dd{
+    width: 80%;
+    border-top:1px solid rgb(179, 179, 179);
+    padding: 15px;
+}
+
+#News dl dt:last-of-type,
+#News dl dd:last-of-type{
+    border-bottom:1px solid rgb(179, 179, 179);
+}
+
+#contact dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#contact dt{
+    width: 15%;
+}
+
+#contact dd{
+    width: 83%;
+    margin-bottom: 10px;
+
+    border: 1px solid rgb(197, 197, 197);
+    height: 44px;
+    
+}
+
+#contact dd input,
+#contact dd textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#contact dd textarea{
+    height: 10rem;
+}
+
+#contact dd:last-child{
+    height: 166px;
+}
+
+
+
+.button{
+    text-align: center;
+    background-color: black;
+    width: 200px;
+    height: 52px;
+    color: white;
+    margin: 0 auto;
+}
+
+.button input{
+    color: white;
+    padding: 15px 0;
+}
+
+footer{
+    height: 32px;
+    background-color: #24292e;
+    color: white;
+    text-align: center;
+    font-size: 0.55rem;
+    padding: 10px;
+}
+
+
+/* @media screen and (max-width:600px){
+    
+    .wrapper{
+        margin-bottom: 70px;
+    }
+
+    .sec-title{
+        margin-bottom: 40px;
+    }
+
+
+    #header{
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        height: 100px;
+    }
+
+    #header li:first-child{
+        margin-left: 0;
+    }
+
+    #Works ul{
+        flex-direction: column;
+    }
+
+    #Works li{
+        width: 100%;
+    }
+
+    #News dl{
+        flex-direction: column;
+        border-top: 1px solid rgb(179, 179, 179);
+    }
+
+    #News dt{
+        border-top: none;
+        width: 100%;
+        padding:15px 15px 0 15px ;
+    }
+
+    #News dd{
+        width: 100%;
+        border-top: none;
+        border-bottom: 1px solid rgb(179, 179, 179);
+        padding: 0 15px 15px 15px;
+
+    }
+
+    #News dl dt:last-of-type{
+    border-bottom:none;
+    }
+
+    #contact dl{
+        flex-direction: column;
+    }
+
+    #contact dd{
+        width: 100%;
+    }
+
+} */
